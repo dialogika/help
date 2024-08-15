@@ -1,0 +1,79 @@
+/* Custom FAQ Styles */
+
+.faq-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.faq-list-pembayaran {
+  position: relative;
+  width: 100%;
+  max-width: 668px;
+}
+
+.faq-list-pembayaran h5 {
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    0deg,
+    rgba(9, 9, 121, 1) 53%,
+    rgba(0, 166, 199, 1) 100%
+  );
+  color: white;
+  border-radius: 10px;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.faq-list-pembayaran ul {
+  padding: 0;
+}
+
+/* FAQ List Items */
+.faq-list-pembayaran ul li {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  font-size: medium;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.faq-list-pembayaran ul li a {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.faq-list-pembayaran ul li a .bx-chevron-down {
+  font-size: 24px;
+  color: black;
+  transition: transform 0.5s ease;
+}
+
+.faq-list-pembayaran ul li div {
+  padding: 0 1rem;
+  cursor: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-list-pembayaran h5 {
+    font-size: large;
+    border-radius: 0px;
+  }
+  .faq-list-pembayaran ul li {
+    font-size: small;
+  }
+}
+
+/* Rotated state */
+.rotated {
+  transform: rotate(180deg);
+}
