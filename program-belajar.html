@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title> FAQ Program Belajar | Dialogika</title>
+  <meta content="Pelatihan kelas public speaking jogja, selama 1 bulan hingga 3 bulan dan bergaransi bersama Dialogika"
+    name="description" />
+  <meta content="public speaking" name="keywords" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon" />
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon" />
+
+  <!-- OG Meta Tags to share -->
+  <meta property="og:site_name" content="Kelas Public Speaking" />
+  <meta property="og:site" content="dialogika.co/" />
+  <meta property="og:title" content="Kelas Public Speaking Jogja | Dialogika" />
+  <meta property="og:description"
+    content="Pelatihan kelas public speaking jogja, selama 1 bulan hingga 3 bulan dan bergaransi bersama Dialogika" />
+  <meta property="og:image" content="assets/img/hero-bg.webp" />
+  <meta property="og:url" content="www.dialogika.co/" />
+  <meta property="og:type" content="page" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet" />
+
+  <!-- Part CSS Files -->
+  <link href="assets/part/pricing/pricing.css" rel="stylesheet" />
+  <link href="assets/part/category/category.css" rel="stylesheet" />
+  <link href="assets/part/course/course.css" rel="stylesheet" />
+  <link href="assets/part/theme-counter/theme-counter.css" rel="stylesheet" />
+  <link href="assets/part/features-small/features-small.css" rel="stylesheet" />
+  <link href="assets/part/testimoni-insurin/testi.css" rel="stylesheet" />
+  <link href="assets/part/portfolio-insurin/portfolio.css" rel="stylesheet" />
+  <link href="assets/part/services-insurin/service.css" rel="stylesheet" />
+  <link href="assets/part/recent-append/recent-post.css" rel="stylesheet" />
+  <link href="assets/part/cta-append/cta.css" rel="stylesheet" />
+  <link href="assets/part/gallery/cta.css" rel="stylesheet" />
+  <link href="assets/part/gallery-class/style.css" rel="stylesheet" />
+  <link href="assets/part/team-mentor/style.css" rel="stylesheet" />
+  <link href="assets/part/gallery-ipsum/style.css" rel="stylesheet" />
+  <link href="assets/part/card-team/style.css" rel="stylesheet" />
+  <link href="assets/part/event-venue/style.css" rel="stylesheet" />
+  <link href="assets/part/breadcrumbs-banner/banner.css" rel="stylesheet" />
+  <link href="assets/part/breadcrumbs-banner/style.css" rel="stylesheet" />
+  <link href="assets/part/help-intern/help-intern-faq.css" rel="stylesheet" />
+
+  <!--  CDN  -->
+  <script src="https://kit.fontawesome.com/cdde75dea2.js" crossorigin="anonymous"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!--  ========================================================  -->
+  <!-- Spreadsheet API Form Pendaftaran -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function HeroForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+        type: "post",
+        data: $("#hero-form").serializeArray(),
+        headers: {
+          accessKey: "b5216464a11be561ae0b40f9ed98ee90",
+          secretKey: "038c9369d3b221f2387c9d8f3f3e488d",
+        },
+        success: function () {
+          window.location.href =
+            "https://api.whatsapp.com/send?phone=6285780007799&text=Haloo%20kak%20saya%20tertarik%20dengan%20program%20public%20speaking%20dialogika%0A%0A%60%60%60dari%20halaman%20home%20dialogika%60%60%60";
+        },
+        error: function () {
+          alert("There was an error :(");
+        },
+      });
+    }
+
+    function SubForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+        type: "post",
+        data: $("#myForm").serializeArray(),
+        success: function () {
+          alert("Anda Telah Mendaftar :)");
+        },
+        error: function () {
+          alert("There was an error :(");
+        },
+      });
+    }
+
+    function Subcription() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/18511/",
+        type: "post",
+        data: $("#subcriptions").serializeArray(),
+        success: function () {
+          // $('#subcription-modal').modal('show');
+          // open("https://link.dialogika.co/open-whatsapp-group");
+          window.location.href =
+            "https://link.dialogika.co/open-whatsapp-group";
+        },
+        error: function () {
+          alert("There was an error :(");
+        },
+      });
+    }
+  </script>
+  <!-- End Spreadsheet API Form Pendaftaran -->
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "916674555903437");
+    fbq("track", "PageView");
+  </script>
+  <noscript><img height="1" width="1" style="display: none"
+      src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Pixel Quora -->
+  <!-- DO NOT MODIFY -->
+  <!-- Quora Pixel Code (JS Helper) -->
+  <script>
+    !(function (q, e, v, n, t, s) {
+      if (q.qp) return;
+      n = q.qp = function () {
+        n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments);
+      };
+      n.queue = [];
+      t = document.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = document.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(window, "script", "https://a.quora.com/qevents.js");
+    qp("init", "cae6711903da464ab62f03df5f66aedc");
+    qp("track", "ViewContent");
+  </script>
+  <noscript><img height="1" width="1" style="display: none"
+      src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1" /></noscript>
+  <!-- End of Quora Pixel Code -->
+  <script>
+    qp("track", "GenerateLead");
+  </script>
+  <!-- End Pixel Quora -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV60XT856G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-148836422-2");
+    gtag("config", "G-HV60XT856G");
+  </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KGK9D6H");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for https://dialogika.co -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj =
+        h.hj ||
+        function () {
+          (h.hj.q = h.hj.q || []).push(arguments);
+        };
+      h._hjSettings = { hjid: 2828594, hjsv: 6 };
+      a = o.getElementsByTagName("head")[0];
+      r = o.createElement("script");
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+  </script>
+  <!-- End Hotjar -->
+  <!--  ========================================================  -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe> </noscript><!-- End Google Tag Manager (noscript) -->
+
+  <!-- ======= Top Bar, Header, Side Bar ======= -->
+  <main-header></main-header>
+  <!-- ======= Top Bar, Header, Side Bar ======= -->
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>FAQ Program Belajar</h2>
+        <ol>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Help Center</a></li>
+          <li><a href="program-belajar.html">FAQ Program Belajar</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs Section -->
+
+  <main id="main">
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="row faq">
+          <div class="col-lg-3">
+            <ul class="sidebar-menu">
+              <li class="menu-item "><a href="intern.html">Internship</a></li>
+              <li class="menu-item "><a href="payment.html">Pembayaran</a></li>
+              <li class="menu-item active"><a href="program-belajar.html">Program Belajar</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-9 faq" id="faq">
+            <div class="faq-list-intern" data-bs-toggle="collapse">
+              <section style="padding: 0%;" id="intern">
+                <ul>
+                  <h5>FAQ Program Belajar</h5>
+                  <li>
+                    <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapsed">Program apa saja yang
+                      disediakan di Dialogika ?<i class="bx bx-chevron-down icon-show"></i></a>
+                    <div id="faq-list-1" class="collapse faq-jawaban">
+                      <p>
+                        Dialogika menyediakan berbagai program pembelajaran untuk anak-anak dan dewasa. Beberapa program
+                        yang populer untuk <span class="fw-bold text-black">dewasa</span> termasuk:
+                      </p>
+                      <ul class="list-jawaban" style="margin-bottom: 20px;">
+                        <li>- Basic Play (Online via Zoom)</li>
+                        <li>- Basic Plus (Online via Zoom)</li>
+                        <li>- Basic Private (Online via Zoom)</li>
+                        <li>- First Class (Offline/tatap muka)</li>
+                        <li>- First Private (Offline/tatap muka)</li>
+                      </ul>
+                      <p>Sedangkan untuk <span class="fw-bold text-black">anak-anak</span>, program-program yang banyak
+                        diminati meliputi :</p>
+                      <ul class="list-jawaban" style="margin-bottom: 20px;">
+                        <li>- Kids Play (Online via Zoom)</li>
+                        <li>- Kids Plus (Online via Zoom)</li>
+                        <li>- Kids Private (Online via Zoom)</li>
+                        <li>- First Kids (Offline/tatap muka)</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Apa bedanya Basic Plus
+                      dan First class ?<i class="bx bx-chevron-down icon-show"></i></a>
+                    <div id="faq-list-2" class="collapse faq-jawaban">
+                      <p><span class="fw-bold text-black"> Basic Plus </span>adalah program pengembangan diri dan
+                        pelatihan public speaking selama 1 (satu)
+                        bulan,
+                        dilaksanakan secara online melalui Zoom, dengan peserta antara 1 hingga 10 orang.
+                      </p>
+                      <p>
+                        <span class="fw-bold text-black">First Class</span> adalah program serupa yang lebih intensif,
+                        berlangsung selama 2 (dua) bulan dengan
+                        10
+                        (sepuluh) kali pertemuan secara offline/tatap muka. Program ini tersedia di Yogyakarta,
+                        Tangerang, dan
+                        Surabaya.
+                      </p>
+
+                      <p>Untuk informasi lebih lanjut mengenai kedua program ini, Anda dapat merujuk pada tabel
+                        perbandingan yang tersedia.</p>
+
+                      <table class="table table-jawaban" style="font-family: 'Poppins', sans-serif;">
+                        <thead>
+                          <tr>
+                            <th class="first-col">
+                            </th>
+                            <th>Basic Plus</th>
+                            <th>First Class</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="first-col">
+                              Program</td>
+                            <td class="justify-content-center">
+                              <ul>
+                                <li>Basic Plus Regular : Kelas Dasar</li>
+                                <li>Basic Plus Private : Kelas Dasar</li>
+                              </ul>
+                            </td>
+                            <td class="justify-content-center">
+                              <ul>
+                                <li>First Class Regular : Kelas Dasar</li>
+                                <li>First Class Private : Kelas Dasar</li>
+                              </ul>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="first-col">
+                              Persyaratan</td>
+                            <td class="my-2">Usia 16 tahun keatas
+                            </td>
+                            <td>Usia 16 tahun keatas</td>
+                          </tr>
+
+                          <tr>
+                            <td class="first-col">
+                              Metode penyampaian</td>
+                            <td class="justify-content-center">Online (Zoom meeting)</td>
+                            <td class="justify-content-center">Offline (JOGJA/Tangsel/Surabaya)</td>
+                          </tr>
+
+                          <tr>
+                            <td class="first-col">
+                              Pertemuan</td>
+                            <td class="justify-content-center">Regular : 7 kali (1 bulan) <br /> Private : 7 kali
+                              (sampai
+                              selesai)</td>
+                            <td class="justify-content-center">Regular : 10 kali (2 bulan) <br /> Private &nbsp;: 10
+                              kali
+                              (sampai
+                              selesai)</td>
+                          </tr>
+                          <tr>
+                            <td class="first-col">
+                              Durasi</td>
+                            <td class="justify-content-center">90 menit</td>
+                            <td class="justify-content-center">90 menit</td>
+                          </tr>
+                          <tr>
+                            <td class="first-col">
+                              Partisipan</td>
+                            <td class="justify-content-center">Maksimal 7 orang (Regular) <br /> 1-3 orang (Private)
+                            </td>
+                            <td class="justify-content-center"> Maksimal 10 orang (Regular)<br />1-3 orang (Private)
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="first-col">
+                              Termasuk</td>
+                            <td class="justify-content-center">
+                              <ul>
+                                <li> Garansi mengulang kelas</li>
+                                <li>eCertificate</li>
+                                <li>E-Book Kunci Public Speaking</li>
+                                <li>E-Module</li>
+                              </ul>
+                            </td>
+                            <td class="justify-content-center">
+                              <ul>
+                                <li> Garansi mengulang kelas</li>
+                                <li>eCertificate</li>
+                                <li>E-Book Kunci Public Speaking</li>
+                                <li>E-Module</li>
+                              </ul>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="first-col">
+                              Harga</td>
+
+                            <td class="justify-content-center">
+                              <ul>
+                                <li>Regular : Rp499,000 (dari Rp 1,000,000) </li>
+                                <li>Private : Rp987,000 (dari Rp 2,000,000) </li>
+                              </ul>
+                            </td>
+                            <td class="justify-content-center">
+                              <ul>
+                                <li>Regular : Rp 1,579,000 (dari Rp 3,000,000) </li>
+                                <li>Private : Rp 2,579,000 - Rp 4.579.000 </li>
+                              </ul>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="first-col">
+                              Lokasi</td>
+                            <td class="justify-content-center">Online via Zoom</td>
+                            <td class="justify-content-center">
+                              <ul>
+                                <li>
+                                  <a href="https://maps.app.goo.gl/LzCKkNekboa3JGpV6">Daheim Cafe
+                                    (Jogja)</a>
+                                </li>
+                                <li>
+                                  <a href="https://maps.app.goo.gl/6ML7TMRfg4Tsntp38">PubliCa Bintaro (Tangsel)</a>
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </li>
+
+                  <li>
+                    <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Apakah ada diskon atau
+                      promosi untuk program-program ini?<i class="bx bx-chevron-down icon-show"></i></a>
+                    <div id="faq-list-3" class="collapse faq-jawaban">
+                      <p>Ya, Terdapat berbagai diskon dan promosi yang ditawarkan dari waktu ke waktu.
+                        <br />
+                        Anda dapat mengunjungi situs dan mengikuti media sosial kami atau menghubungi tim layanan
+                        pelanggan untuk informasi
+                        diskon atau promosi terbaru.
+                      </p>
+                    </div>
+                  </li>
+
+                </ul>
+                <!-- FAQ content for Orders -->
+              </section>
+              <!-- Add more sections as needed -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Featured Services Section -->
+
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients" style="margin-top: -60px; margin-bottom: -10px;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/uad.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/amikom.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/mercu.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/polita.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/corporate/uin-suka.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Clients Section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer & Counter Area ======= -->
+  <main-footer></main-footer>
+  <!-- ======= End Footer & Counter Area ======= -->
+
+  <div class="sosmed-container mt-4">
+    <button type="button" class="btn-sosmed btn-trigger-sosmed">
+      <i class="bi bi-phone-fill bx-tada" id="icon-trigger"></i>
+    </button>
+    <button type="button" class="btn-sosmed btn-wa" onclick="location.href='https://wa.link/ms2gko';">
+      <i class="bx bxl-whatsapp bx-tada"></i>
+    </button>
+    <button type="button" class="btn-sosmed btn-linkedin"
+      onclick="location.href='https://linkedin.com/company/dialogika';">
+      <i class="bi bi-linkedin "></i>
+    </button>
+    <button type="button" class="btn-sosmed btn-x" onclick="location.href='https://x.com/dialogika_co';">
+      <i class="bi bi-twitter-x "></i>
+    </button>
+    <button type="button" class="btn-sosmed btn-ig" onclick="location.href='https://instagram.com/dialogika.co';">
+      <i class="bi bi-instagram "></i>
+    </button>
+    <button type="button" class="btn-sosmed btn-tiktok" onclick="location.href='https://tiktok.com/@dialogika.co';">
+      <i class="bi bi-tiktok "></i>
+    </button>
+  </div>
+
+
+
+  <script src="assets/part/gallery-ipsum/script.js"></script>
+  <script src="assets/part/help-intern/help-intern.js"></script>
+
+  <script src="assets/js/sosmed.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <!--  <script src="assets/js/en.js"></script>-->
+  <script src="assets/js/headerfooter.js"></script>
+  <script src="assets/js/timestamp.js"></script>
+  <script src="assets/js/whatsapp.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
