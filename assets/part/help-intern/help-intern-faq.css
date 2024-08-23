@@ -181,7 +181,7 @@ html {
 }
 
 /* sidebar tidak ditampilkan di layar ponsel */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .sidebar-menu {
     display: none; /* Menyembunyikan sidebar */
   }
